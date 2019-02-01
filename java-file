@@ -39,3 +39,18 @@ public class Student
 		System.out.println("Grade Point Average is: " + gradePoint);
 	}
 }
+
+class ShowStudent
+{
+	public static void main(String[] args)
+	{
+		Student std = new Student();
+		
+		std.setStudentId(1001);
+		std.setCreditHours(3);
+		std.setPointsEarned(12);
+		std.calculateGradePoint();
+		
+		std.showStudent();
+	}
+}
