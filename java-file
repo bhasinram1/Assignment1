@@ -1,0 +1,41 @@
+public class Student
+{
+	int studentId, creditHours, pointsEarned;
+	double gradePoint;
+	
+	public Student()
+	{
+		studentId = 9999;
+		creditHours = 3;
+		pointsEarned = 12;
+		gradePoint = pointsEarned / creditHours;
+	}
+	
+	public void setStudentId(int ID)
+	{
+		studentId = ID;
+	}
+	
+	public void setCreditHours(int hours)
+	{
+		creditHours = hours;
+	}
+	
+	public void setPointsEarned(int points)
+	{
+		pointsEarned = points;
+	}
+	
+	public void calculateGradePoint()
+	{
+		gradePoint = pointsEarned / creditHours; 
+	}
+	
+	public void showStudent()
+	{
+		System.out.println("Student ID is: " + studentId);
+		System.out.println("Number of credit hours earned: " + creditHours);
+		System.out.println("Number of points earned: " + pointsEarned);
+		System.out.println("Grade Point Average is: " + gradePoint);
+	}
+}
